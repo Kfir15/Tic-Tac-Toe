@@ -5,25 +5,50 @@
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <div class="turn-container">
-        <h3>TURN</h3>
-        <div class="turn-box align">X</div>
-        <div class="turn-box align">O</div>
-        <div class="bg"></div>
+    <div id="player-setup">
+        <h2>Enter Player Names</h2>
+        <input type="text" id="playerX" placeholder="Player X Name">
+        <input type="text" id="playerO" placeholder="Player O Name">
+        <button id="start-game">Start Game</button>
     </div>
-    <div class="main-grid">
-        <div class="box align">0</div>
-        <div class="box align">1</div>
-        <div class="box align">2</div>
-        <div class="box align">3</div>
-        <div class="box align">4</div>
-        <div class="box align">5</div>
-        <div class="box align">6</div>
-        <div class="box align">7</div>
-        <div class="box align">8</div>
+
+
+    <div id="game-board" style="display: none;">
+        <div class="turn-container">
+            <h3>TURN</h3>
+            <div class="turn-box align">X</div>
+            <div class="turn-box align">O</div>
+            <div class="bg"></div>
+        </div>
+        <div class="main-grid">
+            <div class="box align">0</div>
+            <div class="box align">1</div>
+            <div class="box align">2</div>
+            <div class="box align">3</div>
+            <div class="box align">4</div>
+            <div class="box align">5</div>
+            <div class="box align">6</div>
+            <div class="box align">7</div>
+            <div class="box align">8</div>
+        </div>
+
+        <div id="scores">
+            <h3>Scoreboard</h3>
+            <div class="score-container">
+                <div class="player-score">
+                    <span id="playerX-name">Player X:</span>
+                    <span id="scoreX">0</span>
+                </div>
+                <div class="player-score">
+                    <span id="playerO-name">Player O:</span>
+                    <span id="scoreO">0</span>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="results"></h2>
+        <button id="play-again">Play Again</button>
     </div>
-    <h2 id="results"></h2>
-    <button id="play-again">Play Again</button>
     <script src="script.js"></script>
 </body>
 </html>

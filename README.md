@@ -5,3 +5,4 @@ A simple Tic-Tac-Toe game built using **HTML**, **CSS**, and **JavaScript**. Pla
 ![Game Screenshot](photos/1.png)
 ![Game Screenshot](photos/2.png)
 ![Game Screenshot](photos/3.png)
+![Game Screenshot](photos/4.png)
